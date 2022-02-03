@@ -31,3 +31,6 @@ sudo chown minio-user:minio-user /usr/local/bin/minio
 sudo mkdir /usr/local/share/minio
 sudo mkdir /etc/minio
 sudo chown minio-user:minio-user /etc/minio
+
+sudo wget https://raw.githubusercontent.com/minio/minio-service/master/linux-systemd/minio.service -O /home/ubuntu/minio.service
+sudo mv /home/ubuntu/minio.service /etc/systemd/system
