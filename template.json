@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "amazon-ebs",
-      "ami_name": "packer-aws-ubuntufocal-minio-2",
+      "ami_name": "packer-aws-ubuntufocal-minio-3",
       "ssh_username": "ubuntu",
       "instance_type": "t3.large",
       "launch_block_device_mappings": [
