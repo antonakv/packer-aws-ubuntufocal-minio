@@ -24,8 +24,11 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -y install docker-ce=5:20.10.7~3-0~u
 
 sudo wget https://dl.minio.io/server/minio/release/linux-amd64/minio -O /home/ubuntu/minio
 sudo chmod +x /home/ubuntu/minio
+sudo wget https://dl.min.io/client/mc/release/linux-amd64/mc -O /home/ubuntu/mc
+sudo chmod +x /home/ubuntu/mc
 
 sudo mv /home/ubuntu/minio /usr/local/bin
+sudo mv /home/ubuntu/mc /usr/local/bin
 sudo useradd -r minio-user -s /sbin/nologin
 sudo chown minio-user:minio-user /usr/local/bin/minio
 sudo chown -R minio-user: /usr/local/share/minio
