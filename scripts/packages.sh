@@ -31,8 +31,8 @@ sudo mv /home/ubuntu/minio /usr/local/bin
 sudo mv /home/ubuntu/mc /usr/local/bin
 sudo useradd -r minio-user -s /sbin/nologin
 sudo chown minio-user:minio-user /usr/local/bin/minio
-sudo chown -R minio-user: /usr/local/share/minio
 sudo mkdir /usr/local/share/minio
+sudo chown -R minio-user: /usr/local/share/minio
 sudo mkdir /etc/minio
 sudo chown minio-user:minio-user /etc/minio
 
